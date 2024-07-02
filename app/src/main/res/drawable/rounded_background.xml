@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_background_with_image.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background image layer -->
+    <item>
+        <bitmap
+            android:src="@drawable/pbg1"
+            android:gravity="center"/>
+    </item>
+    <!-- Rounded corners overlay -->
+    <item>
+        <shape>
+
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</layer-list>
