@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/todobg1"
+    tools:context=".dashboard">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#AA0A6A"
+            android:id="@+id/hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello Admin"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasks are pending"
+            android:textSize="15sp"
+            android:textColor="#8B8E91" />
+
+        <EditText
+            android:id="@+id/searchTasks"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:drawableRight="@drawable/baseline_manage_search_24"
+            android:hint="Search Tasks" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress Of The Day"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="7dp" />
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            app:cornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+          >
+
+            <ProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:progress="0"
+                android:max="100"
+
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progressbar_horizontal" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:text="0%"
+              android:textAlignment="center"
+                android:textColor="#27084C"
+                android:textSize="22sp"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Tasks"
+            android:textSize="18sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Task items will be added dynamically -->
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/addTask"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_background"
+            android:contentDescription="Add Task"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="24sp"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+</ScrollView>
