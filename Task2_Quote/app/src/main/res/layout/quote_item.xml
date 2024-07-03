@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="#f00"
+
+    android:orientation="vertical">
+
+   <LinearLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <!-- Quote Text -->
+       <TextView
+           android:id="@+id/quoteText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:padding="8dp"/>
+
+       <!-- Author Text -->
+       <TextView
+           android:id="@+id/authorText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="14sp"
+           android:textStyle="italic"
+           android:padding="8dp"/>
+
+       <!-- Date Text -->
+       <TextView
+           android:id="@+id/dateText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+           android:textStyle="normal"
+           android:padding="8dp"/>
+
+       <!-- Unlike and Share Buttons (ImageViews) -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <!-- Unlike Button -->
+           <ImageView
+               android:id="@+id/unlikeButton"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/heart2"
+               android:padding="8dp"
+               android:clickable="true"
+               android:onClick="onUnlikeClick"
+               android:contentDescription="Unlike Button"/>
+
+           <!-- Share Button -->
+           <ImageView
+               android:id="@+id/shareButton"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/share"
+               android:padding="8dp"
+               android:clickable="true"
+               android:onClick="onShareClick"
+               android:contentDescription="Share Button"/>
+       </LinearLayout>
+   </LinearLayout>
+
+    <!-- RelativeLayout at the end -->
+
+</LinearLayout>

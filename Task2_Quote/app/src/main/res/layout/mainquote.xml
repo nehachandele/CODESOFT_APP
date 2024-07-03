@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@id/content"
+    android:background="@drawable/qbg3"
+    android:layout_marginBottom="8dp"> <!-- Margin between quote items -->
+
+<TextView
+android:id="@+id/quote_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:padding="16dp"
+android:text="Any product that needs a manual to work is broken."
+android:textColor="@color/black"
+android:textSize="24sp" />
+
+<TextView
+android:id="@+id/quote_author"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:padding="8dp"
+android:text="- Elon Musk"
+android:textColor="@color/black"
+android:textSize="18sp" />
+
+    </LinearLayout>

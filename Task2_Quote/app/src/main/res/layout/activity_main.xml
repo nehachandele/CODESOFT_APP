@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/white1"
+    tools:context=".MainActivity">
+<TextView
+    android:textColor="#f00"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="QuoteSpark"
+    android:fontFamily="cursive"
+    android:id="@+id/app_name"
+    android:textSize="30sp"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quote Of The Day"
+        android:textSize="18sp"
+    android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:id="@+id/content"
+
+
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/qbg3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quote_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textStyle="italic"
+            android:fontFamily="serif"
+            android:text="Any product that needs a manual to work is broken."
+            android:textColor="#BC0968"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/quote_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="- Elon Musk"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/like_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/heart"
+
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/share_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/share"
+
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"/>
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:id="@+id/liked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/home"
+           android:src="@drawable/wishlist"/>
+    </RelativeLayout>
+</LinearLayout>
